@@ -1,0 +1,14 @@
+.cart__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart__param {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.cart__footer__total {
+    font-weight: 700;
+}

@@ -1,0 +1,60 @@
+.card {
+    width: 320px;
+    height: 200px;
+    /* margin-top: 50px; */
+    background-image: linear-gradient(to right top, rgb(222, 80, 80), rgb(93, 93, 193));
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 500;
+    padding: 5px;
+    border-radius: 5%;
+    padding-left: 10px;
+    position: relative;
+}
+
+.card__chip-image {
+    width: 35px;
+    margin-left: 5px;
+}
+
+.card__chip-icon {
+    font-size: 1.4rem;
+    transform: rotate(90deg);
+    margin-bottom: 5px;  
+}
+
+.card__type {
+    height: 60px;
+    position: absolute;
+    bottom: 8px;
+    right: 25px;
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100px;
+    /* margin-left: auto;
+    margin-right: 2px; */
+    /* background-color: red; */
+    /* margin-bottom: 50px; */
+    width: 100%;
+}
+
+.card__typeImg {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+    object-position: top left;
+}
+
+@media only screen and (max-width: 1100px) {
+    .card {
+        min-width: 250px;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .card {
+        min-width: 250px;
+        margin-top: 10px;
+    }
+}
