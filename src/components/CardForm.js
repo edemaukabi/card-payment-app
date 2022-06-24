@@ -36,6 +36,17 @@ const CardForm = ({ cards, preferredCard }) => {
     e.preventDefault();
     let errors = validateInfo(cardValues, preferredCard[cardType]["type"]);
     setErrors(errors);
+    let errorAvailable = false;
+    let errorKeys = Object.keys(cardValues)
+    for (let i = 0; i < errorKeys.length; i++) {
+      if (errors[errorKeys[i]]) errorAvailable = true
+    }
+    if (!errorAvailable) setCardValues({
+      cardNumber: "",
+      expiryDate: "",
+      securityCode: "",
+      postalCode: "",
+    })
   };
   return (
     <div className="cardForm">
